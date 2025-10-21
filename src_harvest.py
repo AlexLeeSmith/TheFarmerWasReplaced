@@ -7,6 +7,7 @@ def do():
 
 
 def main():
+    lib_maneuvering.bottom_left()
     lib_maneuvering.zig_zag(do)
 
 

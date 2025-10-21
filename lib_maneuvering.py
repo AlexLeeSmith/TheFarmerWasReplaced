@@ -25,7 +25,7 @@ def goto_x(x_dest, do=lib_util.do_nothing):
                 x_dir = West
         # Do and move
         for _ in range(num_moves):
-            do()
+            do(x_dir)
             move(x_dir)
 
 
@@ -48,7 +48,7 @@ def goto_y(y_dest, do=lib_util.do_nothing):
                 y_dir = South
         # Do and move
         for _ in range(num_moves):
-            do()
+            do(y_dir)
             move(y_dir)
 
 

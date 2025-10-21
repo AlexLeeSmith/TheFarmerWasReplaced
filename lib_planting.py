@@ -7,6 +7,8 @@ UNTILLED = {Entities.Grass, Entities.Bush}
 def try_harvest():
     if can_harvest():
         harvest()
+        return True
+    return False
 
 
 def harvest_when_grown():

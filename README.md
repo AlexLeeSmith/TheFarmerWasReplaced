@@ -26,3 +26,10 @@ Sunflowers need to be harvested in descending order of their number of petals.
 Pumpkins have a chance to die when fully grown, but if survived, can merge with neighbouring pumpkins to form squares.
 
 ![32x32_pumpkin.png](resources/32x32_pumpkin.png)
+
+### 32 x 32 Dinosaur
+
+Dinosaur is a [Snake](https://en.wikipedia.org/wiki/Snake_(video_game_genre)) style game where you eat apples to extend
+the length of your dinosaur.
+
+![32x32_dinosaur.png](resources/32x32_dinosaur.png)

@@ -10,7 +10,7 @@ WATER_THRESHOLD = 0.0
 def main():
     while True:
         lib_maneuvering.bottom_left()
-        lib_maneuvering.zig_zag(lib_planting.simple(PLANT), SIZE, SIZE, False)
+        lib_maneuvering.zig_zag_wrap(lib_planting.simple(PLANT), SIZE, SIZE)
 
 
 if __name__ == "__main__":

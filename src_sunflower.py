@@ -4,9 +4,8 @@ import lib_sorting
 import lib_util
 from __builtins__ import *
 
-GRID_SIZE = 10
+GRID_SIZE = 16
 SKIP_SUNFLOWERS = 10
-MIN_PETALS = 10
 sunflowers = []
 
 
@@ -25,8 +24,6 @@ def main():
         lib_sorting.heap_sort(sunflowers, lib_util.get_first)
         while len(sunflowers) > SKIP_SUNFLOWERS:
             num_petals, (x_sunflower, y_sunflower) = sunflowers.pop()
-            if num_petals < MIN_PETALS:
-                break
             lib_maneuvering.goto(x_sunflower, y_sunflower)
             lib_planting.harvest_when_grown()
         sunflowers = []

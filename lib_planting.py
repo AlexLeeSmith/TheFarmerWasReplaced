@@ -40,6 +40,14 @@ def till_water_plant(p, water_threshold=0.0):
     plant(p)
 
 
+def simple(p, water_threshold=0.0):
+    def f():
+        try_harvest()
+        till_water_plant(p, water_threshold)
+
+    return f
+
+
 def checkered(plant_1, plant_2=Entities.Grass, water_threshold_1=0.0, water_threshold_2=0.0):
     def f():
         try_harvest()
